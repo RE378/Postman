@@ -101,12 +101,7 @@
     grid-template-columns: auto auto;
     
  }
- .G5{
-    display: grid;
-    width: auto;
-    grid-gap:16rem;
-    grid-template-columns: auto auto;
- }
+ 
  .G6{
     width: 50%;
     display: grid;
@@ -184,6 +179,12 @@ text-decoration: none;
         margin-right: 10rem;
         padding-right: 10rem;
     }
+    .G5{
+    display: grid;
+    width: auto;
+    grid-gap:16rem;
+    grid-template-columns: auto auto;
+ }
     iframe{
         width:560px;
          height:315px;
