@@ -251,6 +251,11 @@ text-decoration: none;
         margin-bottom: 10rem;
         padding-bottom: 5rem;
     }
+    .G5{
+    display: grid;
+    width: auto;
+    grid-template-columns: auto auto;
+ }
 }
 .pad-top{
     margin-top: 1rem;
