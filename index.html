@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postman</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="shortcut icon" href="https://d2fltix0v2e0sb.cloudfront.net/dev-black.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/solid.js" integrity="sha384-/BxOvRagtVDn9dJ+JGCtcofNXgQO/CCCVKdMfL115s3gOgQxWaX/tSq5V8dRgsbc" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/fontawesome.js" integrity="sha384-dPBGbj4Uoy1OOpM4+aRGfAOc0W37JkROT+3uynUgTHZCHZNMHfGXsmmvYTffZjYO" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+<section>
+    <nav class="navbar bg-light fixed-top "id="hid1">
+        <div class="container-fluid ">
+          
+          <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon">
+            </span> 
+          </button>
+          <div class="text-start" >
+          <a href="https://dev.to/" target="_blank">
+            <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-black.png" class="icon-h " alt="">
+        </a></div>
+        <div class="text-end">
+        <button class="btn " type="submit">
+            <a href="https://dev.to/search" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/622/622669.png" alt="" class="icon">
+            </a></button>
+        <button class="btn btn-outline-primary btn-lg" type="button">Create account</button></div>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">DEV Community</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                <h4>DEV Community is a community of 866,220 amazing developers</h4>
+                <p>We're a place where coders share, stay up-to-date and grow their careers.</p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-outline-primary btn-lg" type="button">Create account</button>
+                    <button class="btn btn-outline-light btn-lg text-dark"  type="button">Login</button>
+                  </div>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="https://dev.to/" target="_blank">
+                    <img src="https://cdn-icons.flaticon.com/png/128/2163/premium/2163350.png?token=exp=1656258812~hmac=6b8b579e45312875e77ef36a15b8f1dd" class="icon" alt="">
+                    Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://dev.to/listings" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1187/1187525.png" class="icon" alt="">
+                    Listings
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://dev.to/pod">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2368/2368393.png" class="icon" target="_blank" alt="">
+                     Podcasts
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://dev.to/videos">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2972/2972381.png" class="icon" target="_blank" alt="">
+                    Videos
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://dev.to/tags">
+                        <img src="https://cdn-icons-png.flaticon.com/128/971/971115.png" class="icon" target="_blank" alt="">
+                    Tags
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://dev.to/faq">
+                        <img src="https://cdn-icons.flaticon.com/png/128/2987/premium/2987996.png?token=exp=1656259315~hmac=6c005d4ab39f2773566e09b936361085" class="icon" target="_blank" alt="">
+                        FAQ
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://shop.forem.com/">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3081/3081559.png" class="icon" target="_blank" alt="">
+                     Forem Shop
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://dev.to/sponsorships">
+                        <img src="https://cdn-icons.flaticon.com/png/128/520/premium/520459.png?token=exp=1656259476~hmac=eb92cfb9763b42fa2925c843ff005e21" class="icon" target="_blank" alt="">
+                     Sponsors
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://dev.to/about" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/128/5969/5969023.png" class="icon" target="_blank" alt="">
+                    About
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://dev.to/guides" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/128/7833/7833748.png" class="icon" target="_blank" alt="">
+                    Contact
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://dev.to/guides"target="_blank">
+                        <img src="https://cdn-icons.flaticon.com/png/512/2702/premium/2702172.png?token=exp=1656261409~hmac=1f752985c920d96c86a6185d8474a273" class="icon" target="_blank" alt="">
+                    Guides</a>
+                    <small><h6>Other</h6></small>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://dev.to/code-of-conduct"target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/128/456/456115.png" class="icon" target="_blank" alt="">
+                     Code of Conduct
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://dev.to/privacy"target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/128/560/560047.png" class="icon" target="_blank" alt="">
+                     Privacy Policy
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://dev.to/terms" target="_blank">
+                        <img src="https://cdn-icons.flaticon.com/png/512/4955/premium/4955419.png?token=exp=1656260386~hmac=59a2d20de2bb4f214293a3f657bc3386" class="icon" target="_blank" alt="">
+                      Terms of use
+                    </a>
+                  </li>
+                
+              </ul>
+              <p >
+                <a href="https://twitter.com/thepracticaldev" target="_blank" class="gre"><i class="fa-brands fa-twitter" ></i></a>
+                <a href="https://www.facebook.com/thepracticaldev" target="_blank" class="gre"><i class="fa-brands fa-facebook-square"></i></a>
+                <a href="https://github.com/forem" target="_blank" class="gre"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/thepracticaldev/" target="_blank" class="gre"><i class="fa-brands fa-instagram-square"></i></a>
+                <a href="https://www.twitch.tv/thepracticaldev" target="_blank" class="gre"><i class="fa-brands fa-twitch"></i></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </nav>
+</section>
+<section>
+
+      <nav class="navbar bg-light fixed-top">
+      <div id="hid2">
+        <div class="container">
+        <div class="d-flex flex-wrap align-items-center  justify-content-lg-start ">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+               <li><a class="nav-link" href="https://dev.to/" target="_blank">
+                <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-black.png" class="icon-h" alt="">
+            </a></li>
+            <li> <a class="nav-link" href="#">
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                       <span class="input-group-text"> <button class="btn " type="submit">
+                            <img src="https://cdn-icons-png.flaticon.com/128/622/622669.png" alt="" class="icon">
+                        </button></span>
+                      </form>
+                  </a></li>
+            </ul>
+            <div style="margin-left: 28rem;">
+                <button class="btn btn-outline-primary btn-lg" type="button">Create account</button> 
+                <button class="btn btn-outline-light btn-lg text-dark"  type="button">Login</button>
+            </div>
+            </div>  
+    </div>
+      </div>
+    </div>
+  </nav>
+</section>
+
+
+
+
+
+<!-- <span class="border border-d</span>ark"> -->
+
+  <div class="pad-left  boader_body1">
+    
+    <div class="container ">
+      
+      <section class="s1 pad-top">
+        
+          <img class="s1_img1" src="https://res.cloudinary.com/practicaldev/image/fetch/s--7ZNPWZK6--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/wywkzexkghg3xojgfesv.png" alt="">
+        <div class="G1">
+          
+             <div> <a href="https://dev.to/automationbro" target="_blank" class="g-1"> 
+              <img class="s1_img2"
+              src="https://res.cloudinary.com/practicaldev/image/fetch/s--ezU8PCPN--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/426933/80d9086a-12e5-406b-91b4-845a608f9ae0.jpg" 
+              alt=""></a></div>
+              <div >
+         <a href="https://dev.to/automationbro" target="_blank" class="g-1">
+              <p><h6>Dilpreet Johal</h6></a>
+                  <small class="gre">Posted on 30 May</small>
+              </p>
+              
+          </div>
+           
+      </div>
+      <h2 class="head_color">Postman Import/Export – Collection & Environment</h2>
+      <div class="G2">
+          <div ><button type="button" class="btn "id="back_gree"><a href="https://dev.to/t/testing" target="_blank" style="color: black;text-decoration: none;">
+              <span class="gree">#</span>testing
+          </a></button></div>
+          <div><button type="button" class="btn "id="back_yell"><a href="https://dev.to/t/tutorial" target="_blank" style="color: black;text-decoration: none;">
+              <span class="yell">#</span>tutorial
+          </a></button></div>
+          <div><button type="button" class="btn "id="back_gree"><a href="https://dev.to/t/beginners" target="_blank" style="color: black;text-decoration: none;">
+              <span class="gree">#</span>beginners
+          </a></button></div>
+          <div><button type="button" class="btn "id="back_pur"><a href="https://dev.to/t/webdev" target="_blank" style="color: black;text-decoration: none;">
+              <span class="pur">#</span>webdev
+          </a></button></div>
+       </div>
+     </section>
+  
+   <section class="s2">
+      <div class="G3">
+         <div>
+          <div>
+              <a href="https://dev.to/automationbro/series/9767" target="_blank" style="text-decoration: none;"><p >
+                 <h3 class="text-primary">Postman API Testing (17 Part Series)</h3> 
+              </p></a>
+          </div>
+         </div>
+         <div class="G4">
+          <div><p class="cir">1</p></div>
+          <div><a href="https://dev.to/automationbro/postman-api-testing-tutorial-series-57dg" target="_blank" class="bla"> <p style="font-size:larger;">Postman API Testing Tutorial Series</p> </a></div>
+         </div>
+         <div class="G4">
+          <div><p class="cir">2</p></div>
+          <div><a href="https://dev.to/automationbro/make-api-request-with-postman-40k3" target="_blank" class="bla"> <p style="font-size:larger;"> 
+              Make API request with Postman</p> </a></div>
+         </div>
+         <div class="G4">
+          <div><p class="cir">3</p></div>
+          <div><a href="https://dev.to/automationbro/creating-postman-collections-1cdp" target="_blank" class="bla"> <p style="font-size:larger;"> 
+              Creating Postman Collections
+             </p> </a></div>
+         </div>
+  
+         <div class="G4">
+          <div><p class="cir">4</p></div>
+          <div><a href="https://dev.to/automationbro/variables-in-postman-4724" target="_blank" class="bla"> <p style="font-size:larger;"> 
+              Variables in Postman</p> </a></div>
+         </div>
+  
+         <div class="G4">
+          <div><p class="cir">5</p></div>
+          <div><a href="https://dev.to/automationbro/create-fetch-trello-cards-using-postman-3hf6" target="_blank" class="bla"> <p style="font-size:larger;"> 
+              Creating Postman Environment</p> </a></div>
+         </div>
+  
+        <div class="G4">
+          <div><p class="cir">6</p></div>
+          <div><a href="https://dev.to/automationbro/create-fetch-trello-cards-using-postman-3hf6" target="_blank" class="bla"> <p style="font-size:larger;">
+              Create & Fetch Trello Cards using Postman</p> </a></div>
+         </div>
+  
+         <div class="G4">
+          <div><p class="cir">7</p></div>
+          <div><a href="https://dev.to/automationbro/update-trello-card-using-postman-4ecc" target="_blank" class="bla"> <p style="font-size:larger;"> 
+              Update Trello Card using Postman</p> </a></div>
+         </div>
+  
+         <div class="G4">
+          <div><p class="cir">8</p></div>
+          <div><a href="https://dev.to/automationbro/delete-trello-cards-using-postman-2aej" target="_blank" class="bla"> <p style="font-size:larger;">
+              Delete Trello Cards using Postman</p> </a></div>
+         </div>
+  
+         <div class="G4">
+          <div><p class="cir">9</p></div>
+          <div><a href="https://dev.to/automationbro/introduction-to-postman-scripts-1e67" target="_blank" class="bla"> <p style="font-size:larger;">
+             Introduction to Postman Scripts</p> </a></div>
+         </div>
+  
+         <div class="G4">
+          <div><p class="cir">10</p></div>
+          <div><a href="https://dev.to/automationbro/creating-postman-scripts-489l" target="_blank" class="bla"> <p style="font-size:larger;">
+              Creating Postman Scripts</p> </a></div>
+         </div>
+  
+         <div class="G4">
+          <div><p class="cir">11</p></div>
+          <div><a href="https://dev.to/automationbro/creating-postman-tests-2loh" target="_blank" class="bla"> <p style="font-size:larger;">
+              Creating Postman Tests</p> </a></div>
+         </div>
+  
+         <div class="G4">
+          <div><p class="cir">12</p></div>
+          <div><a href="https://dev.to/automationbro/run-postman-collections-5911" target="_blank" class="bla"> <p style="font-size:larger;">
+              Run Postman Collections</p> </a></div>
+         </div>
+  
+        <div class="G4">
+          <div><p class="cir">13</p></div>
+          <div><a href="https://dev.to/automationbro/postman-monitor-web-app-4299" target="_blank" class="bla"> <p style="font-size:larger;">
+              Postman Monitor & Web App</p> </a></div>
+         </div>
+  
+         <div class="G4">
+          <div><p class="cir">14</p></div>
+          <div><a href="https://dev.to/automationbro/postman-newman-tutorial-1mfa" target="_blank" class="bla"> <p style="font-size:larger;">
+              Postman Newman Tutorial</p> </a></div>
+         </div>
+  
+         <div class="G4">
+          <div><p class="cir">15</p></div>
+          <div><a href="https://dev.to/automationbro/run-postman-tests-on-travis-ci-4kp6" target="_blank" class="bla"> <p style="font-size:larger;">
+              Run Postman Tests on Travis Cl</p> </a></div>
+         </div>
+         <div class="G4">
+          <div><p class="cir">16</p></div>
+          <div><a href="https://dev.to/automationbro/postman-file-upload-image-video-3cn1" target="_blank" class="bla"> <p style="font-size:larger;">
+              Postman File Upload (Image & Video)</p> </a></div>
+         </div>
+         <div class="G4">
+          <div><p class="cir act">17</p></div>
+          <div><a href="https://dev.to/automationbro/postman-importexport-collection-environment-331i" target="_blank" class="bla"> <p style="font-size:larger;">
+              <strong style="padding-left:1.5rem ;">Postman Import/Export-Collection & Environment</strong></p> </a></div>
+         </div>
+  
+         
+  
+        
+       </div>
+       </section>
+       <section class="s3">
+          <div>
+            <p>In this post, I will cover how to do import or export of Collection & Environment in Postman. Importing or Exporting data such as
+               Collection and Environment are a great way to share or request data with others.</p>  
+          </div>
+          <h3 class="head_color">Use Case</h3>
+          <p>
+              <p>When you are working with Postman, you typically add bunch of requests related to a project which
+                   you can then group them into collections. And, now let’s imagine, if a new team member joins your 
+                   project and she needs access to those requests, you will have to give her all these request info one 
+                   by one which will take a really long time. Instead you can simply export your collection, 
+                  which she can then import into Postman and will have access to all the requests and the related info.</p>
+               <p>Now ideally, if you have a teams license with postman you can just add her to the team and call it a day but
+                   not all companies have that so this is a good alternative to work with.</p>
+              </p>
+              <div>
+                  <h3>Check out the video below to learn how to Import and
+                       Export Postman Collection and Environment –</h3>
+                       <iframe   src="https://www.youtube.com/embed/8hRK5cE9dzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+  
+                       </iframe>
+                       <hr class="hr_st">
+                       <p>If you are interested in learning more about Postman, check out this Postman playlist –</p>
+                          <p><a target="_blank" href="https://youtu.be/XzoIYpQ_k5E?list=PL6AdzyjjD5HCiZyLYZqjRrB15gHLs8uyV">
+                              https://youtu.be/XzoIYpQ_k5E?list=PL6AdzyjjD5HCiZyLYZqjRrB15gHLs8uyV
+                          </a></p>
+                          <hr class="hr_st"> 
+                          <p>
+                              <img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" class="icon" alt="">
+                              Subscribe to my <a href="https://mailchi.mp/cd270598b6b1/automation-bro-mailing-list" target="_blank"> mailing list</a>
+                               to get access to more content like this as well as be part of amazing free giveaways.
+                          </p>
+                          <p>
+                              <img src="https://cdn-icons-png.flaticon.com/512/456/456115.png" class="icon" alt="">
+                              You can follow my content here as well -
+                              <ul>
+                                  <li><a href="https://twitter.com/automationbro" target="_blank">Twitter</a></li>
+                                  <li><a href="https://www.linkedin.com/company/automation-bro/" target="_blank">LinkedIn</a></li>
+                              </ul>
+                              <p>...</p>
+                              <p>I love coffees! And, if this post helped you out and you would like to support my work, you can do that by clicking on the button below and buying me a cup of coffee -</p>
+                          </p>
+                          <p>
+                              <img  class="coffee" src="https://res.cloudinary.com/practicaldev/image/fetch/s--lUHFj71T--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/4aw2ub3f4qkyjk0ivwt4.png" alt="">
+                          </p>
+                          <p>You can also support me by liking and sharing this content.</p>
+                          <p>Thanks for reading!</p>
+                      </div>
+  
+                      
+  </section>
+  
+  
+  <section class="s1">
+        
+      
+  <h2 class="head_color">Postman Import/Export – Collection & Environment</h2>
+  <div class="G2">
+      <div ><button type="button" class="btn "id="back_gree"><a href="https://dev.to/t/testing" target="_blank" style="color: black;text-decoration: none;">
+          <span class="gree">#</span>testing
+      </a></button></div>
+      <div><button type="button" class="btn "id="back_yell"><a href="https://dev.to/t/tutorial" target="_blank" style="color: black;text-decoration: none;">
+          <span class="yell">#</span>tutorial
+      </a></button></div>
+      <div><button type="button" class="btn "id="back_gree"><a href="https://dev.to/t/beginners" target="_blank" style="color: black;text-decoration: none;">
+          <span class="gree">#</span>beginners
+      </a></button></div>
+      <div><button type="button" class="btn "id="back_pur"><a href="https://dev.to/t/webdev" target="_blank" style="color: black;text-decoration: none;">
+          <span class="pur">#</span>webdev
+      </a></button></div>
+  </div>
+  </section>
+  
+  <section class="s2">
+  <div class="G3">
+     <div>
+      <div>
+          <a href="https://dev.to/automationbro/series/9767" target="_blank" style="text-decoration: none;"><p >
+             <h3 class="text-primary">Postman API Testing (17 Part Series)</h3> 
+          </p></a>
+      </div>
+     </div>
+     <div class="G4">
+      <div><p class="cir">1</p></div>
+      <div><a href="https://dev.to/automationbro/postman-api-testing-tutorial-series-57dg" target="_blank" class="bla"> <p style="font-size:larger;">Postman API Testing Tutorial Series</p> </a></div>
+     </div>
+     <div class="G4">
+      <div><p class="cir">2</p></div>
+      <div><a href="https://dev.to/automationbro/make-api-request-with-postman-40k3" target="_blank" class="bla"> <p style="font-size:larger;"> 
+          Make API request with Postman</p> </a></div>
+     </div>
+     <div class="G4">
+      <div><p class="cir">3</p></div>
+      <div><a href="https://dev.to/automationbro/creating-postman-collections-1cdp" target="_blank" class="bla"> <p style="font-size:larger;"> 
+          Creating Postman Collections
+         </p> </a></div>
+     </div>
+  
+     <div class="G4">
+      <div><p class="cir">4</p></div>
+      <div><a href="https://dev.to/automationbro/variables-in-postman-4724" target="_blank" class="bla"> <p style="font-size:larger;"> 
+          Variables in Postman</p> </a></div>
+     </div>
+  
+     <div class="G4">
+      <div><p class="cir">5</p></div>
+      <div><a href="https://dev.to/automationbro/create-fetch-trello-cards-using-postman-3hf6" target="_blank" class="bla"> <p style="font-size:larger;"> 
+          Creating Postman Environment</p> </a></div>
+     </div>
+  
+    <div class="G4">
+      <div><p class="cir">6</p></div>
+      <div><a href="https://dev.to/automationbro/create-fetch-trello-cards-using-postman-3hf6" target="_blank" class="bla"> <p style="font-size:larger;">
+          Create & Fetch Trello Cards using Postman</p> </a></div>
+     </div>
+  
+     <div class="G4">
+      <div><p class="cir">7</p></div>
+      <div><a href="https://dev.to/automationbro/update-trello-card-using-postman-4ecc" target="_blank" class="bla"> <p style="font-size:larger;"> 
+          Update Trello Card using Postman</p> </a></div>
+     </div>
+  
+     <div class="G4">
+      <div><p class="cir">8</p></div>
+      <div><a href="https://dev.to/automationbro/delete-trello-cards-using-postman-2aej" target="_blank" class="bla"> <p style="font-size:larger;">
+          Delete Trello Cards using Postman</p> </a></div>
+     </div>
+  
+     <div class="G4">
+      <div><p class="cir">9</p></div>
+      <div><a href="https://dev.to/automationbro/introduction-to-postman-scripts-1e67" target="_blank" class="bla"> <p style="font-size:larger;">
+         Introduction to Postman Scripts</p> </a></div>
+     </div>
+  
+     <div class="G4">
+      <div><p class="cir">10</p></div>
+      <div><a href="https://dev.to/automationbro/creating-postman-scripts-489l" target="_blank" class="bla"> <p style="font-size:larger;">
+          Creating Postman Scripts</p> </a></div>
+     </div>
+  
+     <div class="G4">
+      <div><p class="cir">11</p></div>
+      <div><a href="https://dev.to/automationbro/creating-postman-tests-2loh" target="_blank" class="bla"> <p style="font-size:larger;">
+          Creating Postman Tests</p> </a></div>
+     </div>
+  
+     <div class="G4">
+      <div><p class="cir">12</p></div>
+      <div><a href="https://dev.to/automationbro/run-postman-collections-5911" target="_blank" class="bla"> <p style="font-size:larger;">
+          Run Postman Collections</p> </a></div>
+     </div>
+  
+    <div class="G4">
+      <div><p class="cir">13</p></div>
+      <div><a href="https://dev.to/automationbro/postman-monitor-web-app-4299" target="_blank" class="bla"> <p style="font-size:larger;">
+          Postman Monitor & Web App</p> </a></div>
+     </div>
+  
+     <div class="G4">
+      <div><p class="cir">14</p></div>
+      <div><a href="https://dev.to/automationbro/postman-newman-tutorial-1mfa" target="_blank" class="bla"> <p style="font-size:larger;">
+          Postman Newman Tutorial</p> </a></div>
+     </div>
+  
+     <div class="G4">
+      <div><p class="cir">15</p></div>
+      <div><a href="https://dev.to/automationbro/run-postman-tests-on-travis-ci-4kp6" target="_blank" class="bla"> <p style="font-size:larger;">
+          Run Postman Tests on Travis Cl</p> </a></div>
+     </div>
+     <div class="G4">
+      <div><p class="cir">16</p></div>
+      <div><a href="https://dev.to/automationbro/postman-file-upload-image-video-3cn1" target="_blank" class="bla"> <p style="font-size:larger;">
+          Postman File Upload (Image & Video)</p> </a></div>
+     </div>
+     <div class="G4">
+      <div><p class="cir act">17</p></div>
+      <div><a href="https://dev.to/automationbro/postman-importexport-collection-environment-331i" target="_blank" class="bla"> <p style="font-size:larger;">
+          <strong style="padding-left:1.5rem ;">Postman Import/Export-Collection & Environment</strong></p> </a></div>
+     </div>
+  
+     
+  
+    
+   </div>
+   </section>
+  
+   <section class="s1 s3 ">
+     <hr class="gre s4">
+      <div class="G5">
+          <div><h5>Discussion (0)</h5></div>
+      <div ><button type="button" class="btn btn-outline-secondary " >
+        <strong class="head_color" style="font-weight: 500;">Subscribe</strong>
+        </button></div>
+      </div>
+      <div class="pad-top">
+        <div class="container ">
+          <div class="row">
+            <div class="col-lg-1">
+         <img src="https://cdn-icons-png.flaticon.com/128/5969/5969023.png"  style="border-radius: 50px;width: 30px;" target="_blank" alt="">
+            </div>
+            <div class="col-lg-8">
+              <textarea class="form-control h-5" rows="1"  placeholder="Leave a comment here" ></textarea>
+            </div>
+      </div></div></div>
+      <div class="pad-top">
+      <center>
+        <small>
+          <p class="gre">
+            <a href="https://dev.to/code-of-conduct" target="_blank" class="ah">Code of Conduct  </a> •
+            <a href="https://dev.to/report-abuse" class="ah">Report abuse</a>
+          </p>
+        </small>
+      </center></div>
+      </div>
+    </section>
+  </div>
+
+
+  <section class="sb pad-top1">
+
+   <h3 class="pad-left">Read next</h3>
+    <div class="G6 pad-left">
+          
+             <div> <a href="https://dev.to/automationbro" target="_blank" class="g-1"> 
+              <img class="s1_img2"
+              src="https://res.cloudinary.com/practicaldev/image/fetch/s--QHwGWGHE--/c_imagga_scale,f_auto,fl_progressive,h_100,q_auto,w_100/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/502742/d34ca8d0-5472-425e-b287-3c8b706735cf.png"
+              alt=""></a></div>
+              <div >
+         <a href="https://dev.to/automationbro" target="_blank" class="g-2">
+              <p><h5>How To GraphQL - Tutorials to Get You Started
+                </h5>
+                  <small class="g-2">Lucia Cerchie - Jun 21</small>
+              </p></a>
+          </div>
+
+          <div> <a href="https://dev.to/tsbrun/my-first-tech-conference-3fp6" target="_blank" class="g-1"> 
+            <img class="s1_img2"
+            src="https://res.cloudinary.com/practicaldev/image/fetch/s--6ADNbImy--/c_imagga_scale,f_auto,fl_progressive,h_100,q_auto,w_100/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/373231/360b98f6-18ec-4e79-8066-5806b6afd0f9.jpeg"  alt=""></a></div>
+            <div >
+       <a href="https://dev.to/tsbrun/my-first-tech-conference-3fp6" target="_blank" class="g-2">
+            <p><h5>My first tech conference
+              </h5>
+                <small class="g-2">Anya Brun - Jun 22</small>
+            </p></a>
+        </div>
+         
+        <div> <a href="https://dev.to/seek4samurai/function-visibility-in-solidity-smart-contracts-3fhf" target="_blank" class="g-1"> 
+          <img class="s1_img2"
+          src="https://res.cloudinary.com/practicaldev/image/fetch/s--U1u1rVXk--/c_imagga_scale,f_auto,fl_progressive,h_100,q_66,w_100/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/767417/d8011d32-40a1-448b-8470-7057d556f716.gif"  alt=""></a></div>
+          <div >
+     <a href="https://dev.to/seek4samurai/function-visibility-in-solidity-smart-contracts-3fhf" target="_blank" class="g-2">
+          <p><h5>Function visibility in Solidity Smart Contracts
+            </h5>
+              <small class="g-2">Gourav Singh Rawat - Jun 25</small>
+          </p></a>
+      </div>
+
+      <div> <a href="https://dev.to/kimutai01/data-structures-and-algorithms-4ipe" target="_blank" class="g-1"> 
+        <img class="s1_img2"
+        src="https://res.cloudinary.com/practicaldev/image/fetch/s--_X4UO1IF--/c_imagga_scale,f_auto,fl_progressive,h_100,q_auto,w_100/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/880388/f322fdb6-dc33-4fd9-a21d-891f31720faf.jpeg"  alt=""></a></div>
+        <div >
+   <a href="https://dev.to/kimutai01/data-structures-and-algorithms-4ipe" target="_blank" class="g-2">
+        <p><h5>Data structures and algorithms
+          </h5>
+            <small class="g-2">Kiprotich kimutai - Jun 21</small>
+        </p></a>
+    </div>  
+
+      </div>
+  </section>
+
+</div>
+<!-- Footer -->
+<section class="foot pad-top1 pad-bot">
+
+  <center>
+     <small>
+      <p>
+        <p>
+          <a href="https://dev.to/"target="_blank"><strong>DEV Community</strong>  </a>
+          — A constructive and inclusive social network for software developers. With you every step of your journey.
+        </p>
+        <p>
+          Built on
+          <a href="https://www.forem.com/" target="_blank">Forem</a>— the
+          <a href="https://dev.to/t/opensource" target="_blank">open source </a>software that powers
+          <a href="https://dev.to/" target="_blank"> DEV </a> and other inclusive communities. <br>
+          Made with love and <a href="">
+           Ruby on Rails</a>.
+            DEV Community &copy; 2016 - 2022.
+        </p>
+        <center>
+          <p>
+            <a href="https://www.forem.com/" class="g-2">
+            <img class="s1_img2"
+            src="https://t4.ftcdn.net/jpg/00/60/65/23/240_F_60652333_IIv14yjOuAp0ByvEqy3ci9rJqQSyNj6W.jpg" alt="">
+          </a></p>
+        </center>
+      </p>
+     </small>
+  </center>
+</section>
+
+
+<div>
+  <nav class="navbar bg-light fixed-bottom"id="hid1" style="padding-left: 4rem;">
+    <div class="container-fluid " >
+  
+  <ul class="nav flex-rows">
+      <li class="nav-item" style="padding: 1rem;">
+        <button type="button" class="btn nav-link " data-toggle="modal" data-target="#exampleModalCenter">
+          
+            <img src="https://cdn-icons-png.flaticon.com/128/7873/7873114.png" class="icon" alt="">
+            <p class="icon" >8</p>
+        </button>
+        
+          <br>
+          
+        
+        
+      </li>
+      <li class="nav-item" style="padding: 1rem;">
+        <button type="button" class="btn nav-link " data-toggle="modal" data-target="#exampleModalCenter">
+            <img src="https://cdn-icons-png.flaticon.com/128/6133/6133739.png"class="icon" alt="">
+            <p class="icon" >2</p>
+          </button>
+        </li>
+      <li class="nav-item"style="padding: 1rem;">
+        <button type="button" class="btn nav-link " data-toggle="modal" data-target="#exampleModalCenter">
+          <img src="https://cdn-icons.flaticon.com/png/128/3031/premium/3031121.png?token=exp=1656268771~hmac=021305fe71c59ae9678d0b450390b1a3"class="icon" alt="">
+          <p class="icon" >8</p>
+        </button>
+      </li>
+      
+      <li class="nav-item"style="padding: 1rem;">
+        <button type="button" class="btn nav-link " data-toggle="modal" data-target="#exampleModalCenter">
+          <img src="https://cdn-icons-png.flaticon.com/512/7838/7838339.png"class="icon" alt="">
+        </button>
+      </li>
+
+    </ul>
+  
+    </nav>
+   
+    
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Log in to continue</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="https://cdn-icons-png.flaticon.com/128/5969/5969023.png" class="icon" target="_blank" alt="" style="transform: rotate(-20deg);">
+          <p>
+            <p>We're a place where coders share, stay up-to-date and grow their careers.</p>
+            <p>
+              <div class="d-grid gap-2">
+                <button class="btn btn-outline-primary btn-lg" type="button">Create account</button>
+                 <button class="btn btn-outline-light btn-lg text-dark"  type="button">Login</button>
+              </div>
+            </p>
+          </p>         
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
